@@ -31,6 +31,7 @@
             >
           </div>
           <div v-if="index > 0" class="w-100 mt-3 text-center my-btn text-primary" @click="back">Back</div>
+          <div v-if="index > 0" class="w-100 mt-3 text-center my-btn text-primary" @click="home">Home</div>
         </v-col>
       </v-row>
       <v-dialog v-model="isShowDialog" max-width="290">
@@ -96,6 +97,9 @@ export default {
     back() {
       this.index = this.index-1
       this.list = this.dashboard[this.index]
+    },
+    home() {
+      this.$router.push('/')
     },
     next() {
       if(this.index == this.dashboard.length -1){

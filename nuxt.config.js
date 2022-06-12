@@ -1,5 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
+
+
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -17,8 +20,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap'}
+    ],
+    script: [
+          { src: 'https://static.line-scdn.net/liff/edge/2/sdk.js' }
     ]
   },
+
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [

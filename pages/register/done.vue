@@ -37,11 +37,11 @@ export default {
     }
   },
   methods: {
-    workshop(){
-      this.$router.push('dashboard')
+    dashboard(){
+      this.$router.push('/dashboard')
     },
     close(){
-              this.$router.push('/register')
+              this.$router.push('/')
 //       liff.closeWindow();
     }
   }
